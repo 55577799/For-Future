@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+	<meta charset="utf-8">
+	<title>OptimizedHTML 5</title>
+	<meta name="description" content="Startup HTML template OptimizedHTML 5">
+	<meta name="viewport" content="width=device-width">
+	<link rel="icon" href="img/first.png">
+	<meta property="og:image" content="img/@1x/preview.jpg">
+	<link rel="stylesheet" href="css/styles.min.css">
+
+</head>
+
+<body>
+
+	<div class="grid-container">
+
+	<!--HEADER LOGO-->
+
+	<header class="grid-item logo">
+
+		<div class="logo_helyfly"><img src="img/HELYFLY_2.png" alt="helyfly"></div>
+		<span class="logo_phone">Телефон 8(800)-123-12-12</span>
+		<span class="logo_Moscow">Москва <img class="logo_figure" src="img/figure.png" alt="helyfly"></span>
+
+	</header>
+
+	<!--HELIMAIN START-->
+
+	<div class="grid-item helimain">
+
+		<h2 class="helimain_h2">Эксклюзивная <span class="helimain_h2_orange">фотосессия </span> при полете на
+			вертолете </h2>
+		<div class="helimain_price d-f fd-r ai-c jc-sb">
+
+			<div>
+				<span class="helimain_cost">Стоимость</span>
+				<p class="helimain_price_p"> 1500&#8381; </p>
+			</div>
+
+			<img class="helimain_percent" src="img/percent1.png" alt="helyfly">
+
+		</div>
+		<!-- REGISTRATION FORM -->
+
+
+		<button id="myBtn" class="helimain_offer_button">Забронировать место </button>
+		<div id="myModal" class="modal">
+			<div class="modal-content">
+				<div class="modal-header">
+					<span class="close">&times;</span>
+					<h2 class="helimain_form_h2">Бронирование</h2>
+				</div>
+				<div class="modal-body">
+					<div class="wrapper">
+						<form id="feedback" name="feedback" method="POST">
+							<ul class="form-list form-list_contact">
+								<li class="form-list_contact_li">
+									<label>Дата:</label>
+									<div>
+										<input type="date" id="start" name="trip-start" value="2019-12-09"
+											min="2018-01-01" max="2050-12-31">
+									</div>
+									<span class="error"></span>
+								</li>
+								<li class="form-list_contact_li">
+									<label>Email:</label>
+									<div>
+										<input type="email" name="usermail" maxlength="50" value="" required>
+									</div>
+									<span class="error"></span>
+								</li>
+								<li class="form-list_contact_li">
+									<label>Имя:</label>
+									<div>
+										<input type="text" name="username" maxlength="30" value="Иван">
+									</div>
+									<span class="error"></span>
+								</li>
+								<li class="form-list_contact_li">
+									<label>Фамилия:</label>
+									<div>
+										<input type="text" name="username" maxlength="30" value="Громов">
+									</div>
+									<span class="error"></span>
+								</li>
+								<li class="form-list_contact_li">
+									<label>Телефон:</label>
+									<div>
+										<input type="tel" name="userphone" maxlength="15" value="+7">
+									</div>
+									<span class="error"></span>
+								</li>
+								<li class="form-list_contact_li" id="big">
+									<label>Данные карты:</label>
+									<div>
+										<input type="tel" name="number" maxlength="20" value="Номер карты">
+										<div class="card_data d-f fd-r">
+											<input type="tel" name="expiry" value="Срок действия">
+											<input type="number" name="cvc" value="746"></div>
+									</div>
+									<span class="error"></span>
+								</li>
+
+								<li class="form-list_contact_li_small">
+									<label>Данные карты:</label>
+									<div>
+										<input type="tel" name="number" maxlength="20" value="Номер карты">
+										<!-- <div class="card_data d-f fd-r"> -->
+										<input type="tel" name="expiry" value="Срок действия">
+										<input type="number" name="cvc" value="746">
+									</div>
+									<span class="error"></span>
+								</li>
+								<span class="checkboxForm d-f fd-r">
+									<label><input id="check" type="checkbox" />
+										<p class="checkboxForm_p">Я согласен с пользовательским соглашением и публичной
+											офертой</p>
+									</label></span>
+								<li class="form-list_contact_li">
+									<div>
+										<button id="send_mess" type="submit">Забронировать</button>
+									</div>
+								</li>
+							</ul>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<!-- FOTOSESSION START -->
+
+	<div class="grid-item fotosession">
+
+		<div class="fotosession_reclame">
+			<h2 class="fotosession_h2">Фотосессия в вертолете</h2>
+			<p class="fotosession_p">Полет на вертолете это прекрасная возможность получить новые ощущения!
+				А наш замечательный фотограф запечатлит лучшие моменты</p>
+
+			<ul class="fotosession_list">
+				<li class="fotosession_list_li"> 3 часа съемки </li>
+				<li class="fotosession_list_li"> Более 50 фотографий </li>
+				<li class="fotosession_list_li"> Москва </li>
+				<li class="fotosession_list_li"> Готовы ответить на любые вопросы </li>
+			</ul>
+			<hr>
+			<p class="fotosession_stars">Более 50 отзывов с оценкой<img class="fotosession_stars" src="img/sprite.png"
+					alt="helyfly"></p>
+			<hr>
+		</div>
+
+			 <!-- FOR MEDIA QUERIES STARTS -->
+		<div class="fotosession_reclame_for_media">
+			<h2 class="fotosession_media_h2">Фотосессия в вертолете</h2>
+			<div class="fotosession_reclame_block">
+				<button class="fotosession_youtube_media_start d-f jc-en"><img src="img/suffiks.png"
+						alt="helyfly"></button>
+			</div>
+			<div class="fotosession_youtube_block">
+				<iframe width="555" height="315" src="https://www.youtube.com/embed/Ppjq_BlOukQ" frameborder="0"
+					allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+					allowfullscreen></iframe>
+			</div>
+			<p class="fotosession_media_p">Полет на вертолете это прекрасная возможность получить новые ощущения!
+				А наш замечательный фотограф запечатлит лучшие моменты</p>
+		</div>
+
+
+		<div class="fotosession_reclame_list_media">
+			<ul class="fotosession_list_media">
+				<li class="fotosession_list_media_li"> 3 часа съемки </li>
+				<li class="fotosession_list_media_li"> Русский </li>
+				<li class="fotosession_list_media_li"> От 850&#36; </li>
+				<li class="fotosession_list_media_li"> Дубаи </li>
+				<li class="fotosession_list_media_li"> Более 50 фотографий </li>
+			</ul>
+			<hr>
+			<p class="fotosession_media_stars">Более 150 отзывов с оценкой<img class="fotosession_img_media_stars"
+					src="img/sprite.png" alt="helyfly"></p>
+			<hr>
+		</div>
+
+
+		<div class="fotosession_presentation_media">
+			<h3 class="fotosession_presentation_media_h3">Фотографии пакета: </h3>
+			<div class="fotosession_slider"></div>
+		</div>
+
+
+		<div class="fotosession_timetable_media">
+			<h3 class="fotosession_timetable_media_h3">Доступная съемка в ближайшее время:</h3>
+			<div class="fotosession_media_time">
+				<h4 class="fotosession_time_media_h4">Пятница, 14 сентября </h4>
+				<div class="fotosession_media_time2">
+					<p class="fotosession_media_clock">15:00 - 18:00</p>
+					<p class="fotosession_timetable_media_price">850&#36;</p>
+					<p class="fotosession_timetable_media_notice">Осталось — 1 место</p>
+					<form class="fotosession_offer_media_form" action="index.html"> <button
+							class="fotosession_offer_media_button">Выбрать</button></form>
+				</div>
+
+				<div class="fotosession_media_time2">
+					<p class="fotosession_media_clock">19:00 - 22:00</p>
+					<p class="fotosession_timetable_media_price">850&#36;</p>
+					<p class="fotosession_timetable_media_notice">Осталось — 1 место</p>
+					<form class="fotosession_offer_media_form2" action="index.html"> <button
+							class="fotosession_offer_media_button">Выбрать</button></form>
+				</div>
+				<div class="fotosession_media_time3 d-f fd-c jc-en">
+					<p class="fotosession_media_stars2">Более 150 отзывов с оценкой <img
+							class="fotosession_img_media_stars2" src="img/sprite.png" alt="helyfly"></p>
+				</div>
+			</div>
+		</div>
+
+		    <!-- FOR MEDIA QUERIES END -->
+
+		<div class="fotosession_reclame_block">
+			<button class="fotosession_youtube_start d-f jc-en"><img src="img/suffiks.png" alt="helyfly"></button>
+		</div>
+		<div class="fotosession_youtube_block">
+			<iframe width="555" height="315" src="https://www.youtube.com/embed/Ppjq_BlOukQ" frameborder="0"
+				allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+				allowfullscreen></iframe>
+		</div>
+
+		 <!-- SLIDER -->
+
+		<div class="fotosession_presentation">
+			<h3 class="fotosession_presentation_h3">Фотографии пакета: </h3>
+			<div class="galleryWrapper__image"></div>
+			<div class="galleryPreviewsContainer">
+
+				<img src="images/min/runway_min.png" data-full_image_url="images/max/runway_max.png" alt="helyfly">
+				<img src="images/min/runway1_min.png" data-full_image_url="images/max/runway1_max.png" alt="helyfly">
+				<img src="images/min/pair_min.png" data-full_image_url="images/max/pair_max.png" alt="helyfly">
+				<img src="images/min/pair1_min.png" data-full_image_url="images/max/pair1_max.png" alt="helyfly"> 
+				<img src="images/min/pair2_min.png" data-full_image_url="images/max/pair2_max.png" alt="helyfly">
+				<img src="images/min/men_min.png" data-full_image_url="images/max/men_max.png" alt="helyfly">
+				<img src="images/min/girl_min.png" data-full_image_url="images/max/girl_max.png" alt="helyfly">
+				<img src="images/min/first_min.png" data-full_image_url="images/max/first_max.png" alt="helyfly">
+			</div>
+
+		</div>
+		<div id="offerArrow" onclick="showOtherPhoto()">
+			<h4 class="fotosession_presentation_h4"><img class="fotosession_arrow" src="img/arrow.png" alt="helyfly">
+				Показать все фото <img class="fotosession_arrow" src="img/arrow.png" alt="helyfly"> </h4>
+		</div>
+		<div id="fotosession_other_photo" class="fotosession_show">
+			<div class="galleryPreviewsContainer">
+
+				<img src="images/min/runway_min.png" data-full_image_url="images/max/runway_max.png" alt="helyfly">
+				<img src="images/min/runway1_min.png" data-full_image_url="images/max/runway1_max.png" alt="helyfly">
+				<img src="images/min/pair_min.png" data-full_image_url="images/max/pair_max.png" alt="helyfly">
+				<img src="images/min/pair1_min.png" data-full_image_url="images/max/pair1_max.png" alt="helyfly">
+				<img src="images/min/pair2_min.png" data-full_image_url="images/max/pair2_max.png" alt="helyfly">
+				<img src="images/min/men_min.png" data-full_image_url="images/max/men_max.png" alt="helyfly">
+				<img src="images/min/girl_min.png" data-full_image_url="images/max/girl_max.png" alt="helyfly">
+				<img src="images/min/first_min.png" data-full_image_url="images/max/first_max.png" alt="helyfly">
+			</div>
+		</div>
+
+		<!-- SLIDER END-->
+
+		<div class="fotosession_about">
+			<h3 class="fotosession_about_h3">Об организаторе:</h3>
+			<p class="fotosession_about_text"> Всем привет! Я фотограф Мария! И по мимо фотосъемки я так же являюсь
+				членом группы экспертов туристической
+				отрасли, которые хорошо разбираются в маркетинге, операциях и услугах обслуживания клиентов,
+				специализирующихся на совместном
+				использовании и частных турах. <br> <br> Сначала мы (я и моя команда) изучаем интересы клиентов, а затем
+				придумываем подходящее решение,
+				которое соответствует бюджету и планам клиента. Мы никогда не зависим от субпоставщиков и не свяжемся…
+			</p>
+			<div id="offerText" onclick="showAnotherText()">
+				<h4 class="fotosession_about_h4"> Читать еще <img src="img/arrow.png" alt="helyfly"></h4>
+			</div>
+			<div id="fotosession_another_text" class="fotosession_text">
+				<p class="fotosession_about_text"> Всем привет! Я фотограф Мария! И по мимо фотосъемки я так же являюсь
+					членом группы экспертов туристической
+					отрасли, которые хорошо разбираются в маркетинге, операциях и услугах обслуживания клиентов,
+					специализирующихся на совместном
+					использовании и частных турах. <br> <br> Сначала мы (я и моя команда) изучаем интересы клиентов, а
+					затем придумываем подходящее решение,
+					которое соответствует бюджету и планам клиента. Мы никогда не зависим от субпоставщиков и не
+					свяжемся… </p>
+			</div>
+			<br>
+			<br>
+			<h3 class="fotosession_about_h3"> Что я предоставлю: </h3>
+			<p class="fotosession_about_text"> Встречу вас на машине после длительного перелёта. Качественный подбор
+				места и локации для вашей
+				съемки. При необходимости всегда возможно прерваться на обед/ужин.Более 50 фотографий на выходе с
+				обработкой и замечательные
+				впечатления о Дубае ! </p>
+			<div id="offerText2" onclick="showElseText()">
+				<h4 class="fotosession_about_h4"> Читать еще <img src="img/arrow.png" alt="helyfly"></h4>
+			</div>
+			<div id="fotosession_another_text2" class="fotosession_text2">
+				<p class="fotosession_about_text"> Встречу вас на машине после длительного перелёта. Качественный подбор
+					места и локации для вашей
+					съемки. При необходимости всегда возможно прерваться на обед/ужин.Более 50 фотографий на выходе с
+					обработкой и замечательные
+					впечатления о Дубае ! </p>
+			</div>
+		</div>
+		<div class="fotosession_about_who">
+			<img src="img/who.png" alt="helyfly">
+			<h4 class="fotosession_about_who_h4">Марина Иванова</h4>
+			<p class="fotosession_about_who_p">Фотограф</p>
+			<h5 class="fotosession_about_who_h5"><a href="#">Показать больше информации о фотографе</a></h5>
+		</div>
+
+		<div class="fotosession_timetable">
+			<h3 class="fotosession_timetable_h3">Доступная съемка в ближайшее время:</h3>
+			<div class="fotosession_time">
+				<h4 class="fotosession_time_h4">Пятница, 14 сентября <img src="img/calendar.png" alt="helyfly"></h4>
+				<div class="fotosession_time2">
+					<p class="fotosession_clock">15:00 - 18:00</p>
+					<p class="fotosession_timetable_price">1500&#8381;</p>
+					<p class="fotosession_timetable_notice">Осталось — 1 место</p>
+				</div>
+				<form class="fotosession_offer_form" action="index.html"> <button
+						class="fotosession_offer_button">Выбрать</button></form>
+				<div class="fotosession_time3">
+					<p class="fotosession_clock">19:00 - 22:00</p>
+					<p class="fotosession_timetable_price">1500&#8381;</p>
+					<p class="fotosession_timetable_notice">Осталось — 1 место</p>
+				</div>
+				<form class="fotosession_offer_form2" action="index.html"> <button
+						class="fotosession_offer_button">Выбрать</button></form>
+				<div class="fotosession_time4">
+					<p class="fotosession_stars">Более 50 отзывов с оценкой<img class="fotosession_stars"
+							src="img/sprite.png" alt="helyfly"></p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- MAP START -->
+
+	<div class="grid-item map">
+		<div class="map_code">
+			<iframe
+				src="https://yandex.ru/map-widget/v1/?um=constructor%3Aee7d093116656d70e69547da7c6b9bb7c5b1ae13b6241544f982f2b6e58cad23&amp;source=constructor"
+				width="100%" height="509" frameborder="0"></iframe>
+		</div>
+	</div>
+
+
+
+	</div>
+
+	<!-- The JavaScript libraries section-->
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+	  
+	</script> -->
+	<script src="js/scripts.min.js"></script>
+	<script src="js/slider.js.js"></script>
+
+</body>
+
+</html>

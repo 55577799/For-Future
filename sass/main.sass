@@ -1,0 +1,700 @@
+@import vars
+@import libs
+@import "mixins"
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,800&display=swap" rel="stylesheet"')
+
+::placeholder
+	color: #666
+
+::selection
+	color: #fff
+
+input, textarea
+	outline: none
+	&:focus:required:invalid
+		border-color: red
+	&:required:valid
+		border-color: green
+
+html,
+body
+	font-size: 1rem
+ 	//min-width: 320px
+	position: relative
+	overflow-x: hidden
+	height: 100%
+	//margin: 0 auto
+
+body
+	font-family: 'Montserrat', sans-serif
+	overflow-x: hidden
+
+.h2
+	font-family: $default-font
+
+.d-f
+	display: flex
+
+.d-fb
+	display: flexbox
+
+.d-b
+	display: block
+
+.jc-c
+	justify-content: center
+
+.jc-en
+	justify-content: flex-end
+
+.jc-st
+	justify-content: flex-start
+
+.jc-sb
+	justify-content: space-between
+
+.jc-sa
+	justify-content: space-around
+.ai-s
+	align-items: flex-start
+.ai-c
+	align-items: center
+
+.ai-fend
+	align-items: flex-end
+
+.fd-r
+	flex-direction: row
+
+.fd-c
+	flex-direction: column
+
+.w-100
+	width: 100%
+
+.w-90
+	width: 90%
+
+.w-80
+	width: 80%
+
+.h-100
+	height: 100vh
+
+button
+	background: none
+	border: none
+	outline: none
+	&:focus
+		outline: none
+
+.grid-container
+	display: grid
+	// grid-template-columns: repeat(auto-fit, minmax(320px, 1920px))
+	grid-template-rows: repeat(7, 1fr)
+	grid-template-columns: 390px 1142px 388px
+	grid-template-areas: "logo logo logo" "helimain helimain helimain" "fotosession fotosession fotosession" "map map map" "reviews reviews reviews" "buy buy buy" "footer footer footer" "copyright copyright copyright"
+	margin: 0 auto
+	max-width: 1920px
+	position: relative
+	grid-column-gap: 0
+	grid-row-gap: 0
+	height: 100vh
+
+.grid-item
+	width: 100% !important
+	background-size: cover !important
+
+// LOGO SECTION
+
+.logo
+	display: grid
+	grid-template-rows: 1fr
+	grid-row: 1 / 2
+	grid-column-start: 2
+	grid-column-end: 3
+	background-color: #ffffff
+	place-content: start
+	margin: 1.5em
+	border: none
+	outline: none
+	&_phone
+		display: grid
+		grid-column: 2 / 3
+		//align-self: start
+		//margin: 1em 0 0 10em
+		margin-left: 2em
+		font-size: 14px
+	&_Moscow
+		display: none
+
+// HELIMAIN SECTION
+
+.helimain
+	display: grid
+	grid-column-start: 1
+	grid-column-end: 4
+	grid-row-start: 2
+	grid-row-end: 3
+	grid-template-rows: 286px 294px 260px
+	grid-template-columns: 392px 887px 637px
+	background: url(../img/helimain.png) no-repeat
+	background-size: cover
+	&_percent
+		width: 52px
+		height: 52px
+	&_h2
+		grid-column-start: 2
+		grid-column-end: 2
+		grid-row-start: 2
+		grid-row-end: 2
+		font-size: 2.5rem
+		font-weight: bold
+		color: #ffffff
+	&_price
+		grid-column-start: 2
+		grid-column-end: 4
+		grid-row-start: 2
+		grid-row-end: 3
+		margin-top: 5em
+		place-self: center start
+		width: 224px
+		height: 96px
+		background: #FC9B09
+		padding: 0 29px 0 23px
+		border-radius: 5px
+		position: relative
+		&::after
+			content: ''
+			width: 0
+			height: 0
+			border-style: solid
+			border-width: 15px 20px 0 20px
+			border-color: #fc9b09 transparent transparent transparent
+			position: absolute
+			bottom: -12px
+			right: 60px
+	&_cost
+		font-style: normal
+		font-weight: normal
+		font-size: 1.25rem
+		color: #ffffff
+	&_price_p
+		font-style: normal
+		font-weight: 800
+		font-size: 2.18rem
+		color: #ffffff
+		margin-bottom: 0
+	&_offer_button
+		grid-column-start: 2
+		grid-column-end: 3
+		grid-row-start: 3
+		grid-row-end: 4
+		background: transparent
+		border: 3px solid #FFFFFF
+		box-shadow: 0px 4px 4px rgba(255, 255, 255, 0.25), 0px 4px 70px rgba(255, 255, 255, 0.7)
+		border-radius: 3px
+		width: 304px
+		height: 68px
+		font-weight: 900
+		font-size: 1.125rem
+		line-height: 1.375rem
+		text-align: center
+		color: #ffffff
+	&_offer_button:hover
+		background-color: #F4A460
+		transition: all .5s ease
+
+.helimain_h2_orange
+	color: #FC9B09
+
+	// FOTOSESSION SECTION
+
+.fotosession
+	display: grid
+	grid-column-start: 1
+	grid-column-end: 3
+	grid-row-start: 3
+	grid-row-end: 4
+	grid-template-rows: repeat (4, 1fr)
+	grid-template-columns: 390px 570px 570px 390px
+	margin-top: 70px
+	&_reclame
+		grid-column-start: 2
+		grid-column-end: 3
+	&_reclame_block
+		grid-column-start: 3
+		grid-column-end: 4
+		grid-row-start: 1
+		grid-row-end: 2
+		background: url(../img/reclame.png) no-repeat top center
+		position: relative
+	&_reclame_for_media,
+	&_reclame_list_media,
+	&_presentation_media,
+	&_about_who,
+	&_timetable_media,
+	&_reclame_h2
+		display: none
+	&_youtube_block
+		grid-column-start: 3
+		grid-column-end: 4
+		grid-row-start: 1
+		grid-row-end: 2
+		display: block
+		margin-left: 8px
+	&_h2
+		font-weight: 500
+		font-size: 2.5rem
+		width: 460px
+	&_p
+		font-weight: normal
+		font-size: 1.125rem
+		line-height: 26px
+		width: 549px
+	&_list
+		list-style-type: none
+		text-decoration: none
+		// line-height: 3rem			
+	&_list_li
+		// margin-bottom: 5px	
+		padding-bottom: 20px
+		display: flex
+		align-items: center
+	&_list_li:before
+		padding-right: 10px
+		margin-top: 5px
+	&_list_li:nth-child(1):before
+		content: url(../img/circle1.png)
+	&_list_li:nth-child(2):before
+		content: url(../img/photo1.png)
+	&_list_li:nth-child(3):before
+		content: url(../img/sign1.png)
+	&_list_li:nth-child(4):before
+		content: url(../img/talk1.png)
+	&_list_li_stars:before
+		content: url(../img/rummer1.png)
+	&_stars
+		padding-left: 15px
+	&_stars:before
+		content: url('../img/rummer1.png')
+		padding-left: 25px
+	&_presentation
+		display: grid
+		grid-row-gap: 10px
+		grid-column-gap: 10px
+		grid-column-start: 2
+		grid-column-end: 4
+	&_slider
+		display: grid
+		grid-column-start: 2
+		grid-column-end: 4
+		width: 600px
+	&_youtube_start
+		z-index: 2
+		place-self: end
+		position: absolute
+		bottom: 183px
+		right: 70px
+	&_presentation_h3
+		font-style: normal
+		font-weight: 500
+		font-size: 1.25rem
+		line-height: 1.81rem
+		color: #37373F
+		margin-top: 1em
+	&_presentation_h4
+		font-style: normal
+		font-weight: 500
+		font-size: 1.06rem
+		line-height: 1.56rem
+		color: #5286EC
+		text-align: right
+		grid-column-start: 2
+		grid-column-end: 3
+	&_other_photo
+		display: grid
+		grid-column-start: 2
+		grid-column-end: 5	
+	&_arrow
+		padding: 10px
+	&_show
+		display: none
+		flex-grow: 1
+		height: 100%
+		grid-column-start: 2
+		grid-column-end: 4
+	&_text,
+	&_text2
+		display: none
+	&_about
+		grid-column-start: 2
+		grid-column-end: 3
+		margin-top: 37px
+	&_about_h3
+		font-weight: 500
+		font-size: 1.125rem
+		line-height: 1.625rem
+	&_about_text
+		font-style: normal
+		font-weight: normal
+		font-size: 1rem
+		line-height: 1.5rem
+		color: #37373F
+	&_about_h4
+		font-weight: 500
+		font-size: 16px
+		line-height: 23px
+		color: #5286EC
+	&_about_who
+		display: grid
+		grid-column-start: 3
+		grid-column-end: 4
+		margin-top: 4em
+		place-content: start end
+		justify-items: center
+	&_about_who_h4
+		font-weight: 500
+		font-size: 1.125rem
+		line-height: 1.375rem
+	&_about_who_p
+		font-style: normal
+		font-weight: normal
+		font-size: 0.875rem
+		line-height: 1.31rem
+	&_about_who_h5
+		font-weight: 500
+		font-size: 0.875rem
+		line-height: 1.31rem
+		color: #5286EC
+		width: 290px
+		text-align: center
+	&_timetable
+		grid-column-start: 2
+		grid-column-end: 3
+	&_time
+		display: grid
+		grid-template-rows: 74px 130px 182px 72px
+		grid-template-columns: 611px 159px
+		border: 1px solid #C7C7C7
+		border-inline: 1px solid #C7C7C7
+		width: 770px
+		height: 458px
+	&_time_h4
+		grid-column-start: 1
+		grid-column-end: 3
+		grid-row-start: 1
+		grid-row-end: 2
+		font-weight: normal
+		font-size: 1.125rem
+		line-height: 26px
+		color: #37373F
+		// place-self: start start
+		border-bottom: 0.5px solid #C7C7C7
+		padding: 20px 0 0 20px
+	&_time2
+		grid-column-start: 1
+		grid-column-end: 3
+		grid-row-start: 2
+		grid-row-end: 3
+		border-bottom: 0.5px solid #C7C7C7
+		padding-left: 20px
+	&_clock
+		font-weight: normal
+		font-size: 18px
+		line-height: 26px
+		color: #37373F
+	&_timetable_h3
+		font-style: normal
+		font-weight: 500
+		font-size: 1.25rem
+		line-height: 1.81rem
+		color: #37373F
+		margin-top: 4em
+	&_timetable_price
+		font-weight: 600
+		font-size: 18px
+		line-height: 22px
+		color: #37373F
+	&_timetable_notice
+		font-weight: normal
+		font-size: 18px
+		line-height: 26px
+		color: #37373F
+	&_time3
+		grid-column-start: 1
+		grid-column-end: 3
+		grid-row-start: 3
+		grid-row-end: 4
+		border-bottom: 0.5px solid #C7C7C7
+		padding: 25px 0 0 20px
+	&_time4
+		grid-row-start: 4
+		grid-row-end: 5
+		margin-left: -40px
+		padding-left: 20px
+	&_offer_form
+		grid-column-start: 2
+		grid-column-end: 3
+		grid-row-start: 2
+		grid-row-end: 3
+		place-self: center start
+		margin-top: -30px
+	&_offer_form2
+		grid-column-start: 2
+		grid-column-end: 3
+		grid-row-start: 3
+		grid-row-end: 4
+		margin-top: 45px
+	&_offer_button
+		+fotosession_offer_form ($btn-border, $bg-color)
+		width: 129px
+	&_offer_button:hover
+		background-color: #FFEBCD
+		transition: all 0.5s ease-out
+hr
+	width: 569px
+	height: 0px
+	left: 391px
+	top: 1510px
+	border: 0.5px solid #C7C7C7
+
+// GALLERY
+
+.galleryPreviewsContainer
+	display: flex
+	flex-wrap: wrap
+	grid-column-gap: 10px
+	grid-row-gap: 10px
+	vertical-align: none
+
+
+img
+	vertical-align: none
+
+.galleryWrapper__screen
+	left: 0
+	width: 100%
+	height: 100%
+	background-color: #222
+	opacity: 0.8
+	position: fixed
+	top: 0
+	z-index: 100
+	display: block
+	text-align: center
+
+.galleryWrapper__image
+	max-height: 100%
+	max-width: 100%
+	z-index: 200
+	// position: absolute
+	// margin: auto
+	// left: 0
+	// bottom: 0
+	// right: 0
+	top: 500px
+	left: 500px
+	position: relative
+	//vertical-align: none
+
+
+
+.galleryWrapper__close
+	z-index: 101
+	position: absolute
+	margin-top: 400px
+	right: 640px
+	background-color: #fff
+
+.galleryWrapper__next
+	z-index: 101
+	position: absolute
+	// top: 50%
+	// right: 0
+	// top: 500px
+	margin-left: 1000px
+	margin-top: 500px
+	background-color: #fff
+
+
+.galleryWrapper__back
+	z-index: 101
+	position: absolute
+	margin-top: 500px
+	margin-left: 200px
+	background-color: #fff
+
+#offerArrow
+	grid-column-start: 2
+	grid-column-end: 3
+	cursor: pointer
+
+.show
+	display: block
+
+
+	// MAP SECTION
+.map
+	display: grid
+	grid-column-start: 1
+	grid-column-end: 4
+	grid-row-start: 4
+	grid-row-end: 5
+	width: 100%
+	height: 509
+	&_code
+		grid-row-start: 4
+		grid-row-end: 5
+		margin-top: 80px
+
+// REGISTRATION FORM
+
+.modal
+	display: none /* Hidden by default */
+	position: fixed /* Stay in place */
+	z-index: 1 /* Sit on top */
+	padding-top: 100px /* Location of the box */
+	left: 0
+	top: 0
+	width: 100% /* Full width */
+	height: 100% /* Full height */
+	overflow: auto /* Enable scroll if needed */
+	background-color: rgb(0,0,0) /* Fallback color */
+	background-color: rgba(0,0,0,0.4) /* Black w/ opacity */
+
+.modal-content
+	position: relative
+	background-color: #ffffff
+	margin: auto
+	padding: 0
+	width: 50%
+	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19)
+	-webkit-animation-name: animatetop
+	-webkit-animation-duration: 0.4s
+	animation-name: animatetop
+	animation-duration: 0.4s
+
+.form-list_contact
+	display: flex
+	flex-direction: column
+	justify-content: start
+	// width: 615px
+	height: 887px
+	align-items: center
+
+.form-list_contact_li
+	list-style-type: none
+
+.form-list_contact_li_small
+	display: none
+
+input
+	width: 420px
+	height: 44px
+	padding-left: 1em
+	font-weight: normal
+	font-size: 1rem
+	line-height: 20px
+	color: #37373F
+#start
+	background: url(/img/calendar.png)	no-repeat
+	background-position: 95% 50%
+
+.card_data input
+	width: 210px
+
+label
+	font-weight: 500
+	font-size: 16px
+	line-height: 20px
+	color: #37373f
+
+.checkboxForm_p
+	font-size: 0.87rem
+	text-align: left
+	margin-left: 6em
+	margin-top: -2.5em
+
+#check
+	width: 20px
+	margin-left: 3.5em
+
+.helimain_form_h2
+	text-align: center
+	margin-top: 2em
+	padding-top: 2em
+
+.modal-header
+	margin-top: 2em
+
+#send_mess
+	width: 390px
+	height: 72px
+	background: #FC9B09
+	border-radius: 3px
+	font-weight: 600
+	font-size: 1rem
+	line-height: 20px
+	color: #FFFFFF
+
+#send_mess:hover
+	background: #FFEBCD
+	transition: all .3s ease
+
+.error
+	max-width: 260px
+	display: none
+	font-size: 13px
+	line-height: 15px
+	color: #fff
+	position: absolute
+	left: 230px
+	top: calc(100% + 8px)
+	z-index: 100
+	padding: 6px 10px 7px
+	-webkit-border-radius: 6px
+	border-radius: 6px
+	background: #d99
+
+.error:before
+	width: 0
+	height: 0
+	content: ''
+	position: absolute
+	left: 15px
+	top: -7px
+	border-right: 8px solid transparent
+	border-left: 8px solid transparen
+	border-bottom: 8px solid #d99
+
+@keyframes animatetop
+	from
+	top: -300px
+		opacity: 0
+	to
+	top: 0
+		opacity: 1
+
+@keyframes opacity_ease
+	from
+		opacity: 0
+	to
+		opacity: 1
+
+.close
+	font-size: 5rem
+	margin-left: 10px
+	color: #B3B3B3
+	float: right
+	margin: -.2rem .8rem 0 0
+
+.close:hover,
+.close:focus
+	color: #000
+	text-decoration: none
+	cursor: pointer
+
+
+
+@import media

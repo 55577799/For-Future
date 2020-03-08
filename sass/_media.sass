@@ -1,0 +1,294 @@
+@media screen and (max-width: 740px)
+    .grid-container
+        display: grid
+        grid-template-columns: 1fr
+        grid-template-rows: repeat(7, 1fr)
+        grid-template-areas: "logo" "helimain" "fotosession" "map" "reviews" "buy" "footer" "copyright"
+        margin: 0 auto
+        position: relative
+        grid-column-gap: 0
+        grid-row-gap: 0
+        max-width: 320px
+        height: 100vh
+    .logo
+        display: grid
+        grid-template-rows: 1fr
+        grid-row-start: 1
+        grid-row-start: 2
+        grid-column-start: 1
+        grid-column-end: 2
+        background-color: #ffffff
+        border: none
+        outline: none
+        // &_phone,
+        &_helyfly    
+            display: grid
+            grid-column-start: 1
+            grid-column-end: 3
+            grid-row-start: 1
+            grid-row-end: 2
+            font-size: .87rem
+            margin-left: -1em
+        &_phone
+            display: none
+        &_Moscow
+            display: block 
+            grid-row-start: 1
+            grid-row-end: 2 
+            margin-left: 1em
+        &_figure
+            margin-left: 3em
+    .modal-content
+        grid-column-start: 1
+        grid-column-end: 1
+        width: 90%
+    input
+        width: 250px 
+        height: 44px 
+    .card_data
+        width: 210px  
+    .form-list_contact_li_small
+        display: block
+        margin-left: 1.5em 
+    #big
+        display: none
+    .checkboxForm
+        align-items: start
+    .checkboxForm_p
+        font-size: 0.87rem
+        text-align: left
+        margin-top: -3em
+    #check
+        width: 20px  
+    #send_mess
+        width: 250px
+        height: 50px
+        font-size: 0.87rem
+    .helimain
+        display: grid
+        grid-column-start: 1
+        grid-column-end: 2
+        grid-row-start: 2
+        grid-row-end: 3
+        grid-template-rows: repeat (5, 1fr)        
+        background: url(/img/helimain_small.png) no-repeat top center
+        background-size: cover
+        height: 100%
+        &_h2
+            grid-column-start: 1
+            grid-column-end: 2
+            grid-row-start: 1
+            grid-row-end: 2
+            font-size: 2rem
+            text-align: left
+            width: 280px
+            place-self: end start
+            margin: 2em 0 0 1em
+        &_price
+            grid-column-start: 1
+            grid-column-end: 2
+            grid-row-start: 2
+            grid-row-end: 3
+            width: 200px
+            height: 86px
+            place-self: start start
+            margin-left: 1.5em
+            margin-top: 2em
+        &_offer_button
+            grid-column-start: 1
+            grid-column-end: 2
+            grid-row-start: 3
+            grid-row-end: 4
+            width: 275px
+            height: 68px
+            margin: -8em 0 0 1.5em
+            font-size: 1rem
+        &_price_p
+            font-size: 1.87rem  
+    iframe
+        // height: 50%          
+    .fotosession
+        display: grid
+        grid-column-start: 1
+        grid-column-end: 2
+        grid-row-start: 3
+        grid-row-end: 4
+        grid-template-rows: repeat (1, 7fr)
+        grid-template-columns: repeat(auto-fit, minmax(320px, 740px))
+        &_reclame,
+        &_timetable,
+        &_presentation,
+        &_presentation_h4,
+        &_youtube_start,
+        &_reclame_block    
+            display: none
+        &_reclame_block
+            background: url(../img/reclame_media.png) no-repeat top center
+            position: relative
+            background-size: cover  
+        &_youtube_block,
+        &_reclame_for_media,
+        &_reclame_list_media,
+        &_presentation_media,      
+        &_media_suffiks,
+        &_youtube_media_start,
+        &_reclame_block,
+        &_about_who,
+        &_about,
+        &_timetable_media, 
+            display: block
+            grid-column-start: 1
+            grid-column-end: 2
+        &_reclame_h2
+            display: block
+            grid-column-start: 1
+            grid-column-end: 2
+            // grid-row-start: 1
+            // grid-row-end: 2
+        &_reclame_for_media
+            grid-row-start: 1
+            grid-row-end: 2
+            // margin-top: -3em
+            margin-left: 1.5em
+        &_media_h2,
+        &_media_h3,
+        &_timetable_media_h3
+            font-size: 1.75rem
+            font-weight: normal      
+        &_reclame_list_media
+            grid-row-start: 2
+            grid-row-end: 3
+        &_list_media
+            text-decoration: none
+            list-style-type: none
+            margin-left: -1.5em
+        &_list_media_li
+            padding-bottom: 20px
+            display: flex
+            align-items: center
+        &_list_media_li:before
+            padding-right: 10px
+            margin-top: 5px
+        &_list_media_li:nth-child(1):before
+            content: url(/img/clock.png)
+        &_list_media_li:nth-child(2):before
+            content: url(/img/talk.png)
+        &_list_media_li:nth-child(3):before
+            content: url(/img/money.png)
+        &_list_media_li:nth-child(4):before
+            content: url(/img/sign1.png)
+        &_list_media_li:nth-child(5):before
+            content: url(/img/photo1.png)    
+        &_media_stars
+            padding-left: 15px
+        &_media_stars:before
+            content: url('/img/rummer1.png')
+            padding-left: 25px
+        &_presentation_media
+            grid-row-start: 3
+            grid-row-end: 4
+            padding-left: 1.5em
+        &_presentation_h3
+            font-size: 1.75rem
+            font-weight: normal    
+        &_about_who
+            grid-row-start: 4
+            grid-row-end: 5
+        &_about_who_h3,
+        &_about_h4
+            font-size: 1.12rem
+            font-weight: 500
+        &_time_media_h4,
+        &_media_clock,
+        &_timetable_media_notice
+            font-size: 1.12rem
+            font-weight: normal
+        &_timetable_media_price
+            font-size: 1.12rem
+            font-weight: 600
+        &_about_who
+            margin-left: 1.5em            
+        &_media_p,    
+        &_about_who_p,
+            font-size: 0.87rem 
+            font-weight: normal
+        &_media_stars 
+            font-size: 0.87rem
+            font-weight: normal
+            margin-left: -1.5em   
+        &_media_stars2
+            font-size: 0.81rem
+            font-weight: normal    
+        &_about_who_h5
+            font-size: 0.87rem
+            font-weight: 500 
+            // text-align-last: left 
+            margin-left: -1.5em         
+        &_about
+            grid-row-start: 5
+            grid-row-end: 6
+            margin-left: 1.5em
+        &_about_text
+            font-size: 1rem
+            font-weight: normal
+        &_about_h4
+            font-size: 1rem
+            font-weight: 500    
+        &_timetable_media
+            grid-row-start: 6
+            grid-row-end: 7
+            margin-left: 1.5em
+            border-top: none
+            width: 90%
+            margin-top: 3em
+        &_time_media_h4
+            border-bottom: 1px solid grey
+            margin-top: 2em
+            padding-left: 1em
+        &_media_time
+            border: 1px solid grey       
+        &_media_time2
+            border-bottom: 1px solid grey
+            padding-left: 1em
+        &__media_time3
+            width: 50%             
+        &_offer_media_button
+            +fotosession_offer_form ($btn-border, $bg-color)
+            font-size: 0.87rem
+            font-weight: 500 
+            width: 129px
+            height: 50px
+            margin-bottom: 2em
+        &_media_clock
+            margin-top: 1em
+        &_media_stars2
+            margin: 2em 0 2em 0
+            width: 80%
+        &_img_media_stars2
+            margin-left: 4em
+        &_media_stars2:before
+            content: url('/img/rummer1.png')
+            padding-left: 25px            
+
+    .offerArrow
+        grid-row-start: 7
+        grid-row-end: 8
+
+
+
+
+
+
+    .logo 
+        grid-area: logo
+
+    .helimain 
+        grid-area: helimain
+
+    .fotosession 
+        grid-area: fotosession
+
+    .map 
+        grid-area: map
+
+
