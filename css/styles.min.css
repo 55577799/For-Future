@@ -1561,9 +1561,9 @@ label {
     }
     .fotosession_reclame_list_media {
         -ms-grid-row: 2;
-        grid-row-start: 2;
+        grid-row-start: 3;
         -ms-grid-row-span: 1;
-        grid-row-end: 3
+        grid-row-end: 4
     }
     .fotosession_list_media {
         text-decoration: none;
