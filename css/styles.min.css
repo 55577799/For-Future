@@ -1724,7 +1724,7 @@ label {
         margin-left: 4em
     }
     .fotosession_media_stars2:before {
-        content: url(/img/rummer1.png);
+        content: url(../img/rummer1.png);
         padding-left: 25px
     }
     .offerArrow {
