@@ -1609,9 +1609,9 @@ label {
     }
     .fotosession_presentation_media {
         -ms-grid-row: 3;
-        grid-row-start: 3;
+        grid-row-start: 4;
         -ms-grid-row-span: 1;
-        grid-row-end: 4;
+        grid-row-end: 5;
         padding-left: 1.5em
     }
     .fotosession_presentation_h3 {
