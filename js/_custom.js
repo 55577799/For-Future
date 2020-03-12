@@ -133,8 +133,9 @@ document.addEventListener("DOMContentLoaded", function () {
 // LOOK OTHER PHOTOS
 
 function showOtherPhoto(selector) {
-	document.querySelector(".fotosession_show").classList.toggle("show");
+	 document.querySelector(".fotosession_show").classList.toggle("show");	
 }
+
 
 //FOR READING TEXT PART1
 
