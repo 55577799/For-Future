@@ -823,7 +823,7 @@ button:focus {
 
 .fotosession_show {
     display: none;
-    -webkit-box-flex: 1;
+/*     -webkit-box-flex: 1;
     -webkit-flex-grow: 1;
     -ms-flex-positive: 1;
     flex-grow: 1;
@@ -831,7 +831,7 @@ button:focus {
     -ms-grid-column: 2;
     grid-column-start: 2;
     -ms-grid-column-span: 2;
-    grid-column-end: 4
+    grid-column-end: 4 */
 }
 
 .fotosession_text, .fotosession_text2 {
@@ -1135,20 +1135,6 @@ img {
     cursor: pointer
 }
 
-
-
-.fotosession_show {
-    display: none;
-    /* -webkit-box-flex: 1;
-    -webkit-flex-grow: 1;
-    -ms-flex-positive: 1;
-    flex-grow: 1;
-    height: 100%;
-    -ms-grid-column: 2;
-    grid-column-start: 2;
-    -ms-grid-column-span: 2;
-    grid-column-end: 4 */
-}
 .map {
     display: -ms-grid;
     display: grid;
